@@ -53,8 +53,10 @@ def play_game():
     while calculate_score(dealer_cards) != 0 and calculate_score(dealer_cards) < 17:
         dealer_cards.append(deal_card())
 
-    print(f"Your final hand: {user_cards}, final score: {calculate_score(user_cards)}")
-    print(f"Dealer's final hand: {dealer_cards}, final score: {calculate_score(dealer_cards)}")
+    print(
+        f"Your final hand: {user_cards}, final score: {calculate_score(user_cards)}")
+    print(
+        f"Dealer's final hand: {dealer_cards}, final score: {calculate_score(dealer_cards)}")
     print(compare(calculate_score(user_cards), calculate_score(dealer_cards)))
 
 
